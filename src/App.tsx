@@ -49,27 +49,38 @@ function App() {
   
   return (
     <>
-      <h1>Enter Your details</h1>
-      <input type="text" placeholder='enter name' value={studentName} onChange={(e)=> setStudentName(e.target.value)}/>
-      <br />
-      <input type="text" placeholder='enter college' value={collegeName} onChange={(e)=> setCollegeName(e.target.value)}/>
-      <br />
-      <input type="text" placeholder='enter round1marks' value={round1Marks} onChange={(e)=> setRound1Marks(e.target.value)}/>
-      <br />
-      <input type="text" placeholder='enter round2marks' value={round2Marks} onChange={(e)=> setRound2Marks(e.target.value)}/>
-      <br />
-      <input type="text" placeholder='enter round3marks' value={round3Marks} onChange={(e)=> setRound3Marks(e.target.value)}/>
-      <br />
-      <input type="text" placeholder='enter technical round marks' value={technicalRoundMarks} onChange={(e)=> setTechnicalRoundMarks(e.target.value)}/>
+      
+      <div className='h-screen w-full flex flex-col items-center justify-center'>
+        <h1 className='Heading mt-40 mb-10'>Enter Your details</h1>
 
-      <br />
-      <button onClick={handleSubmit}>Submit</button>
-      <br />
+        <div className='height-1/2'>
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1' type="text" placeholder='enter name' value={studentName} onChange={(e)=> setStudentName(e.target.value)}/>
+        </div>
+      
+        <br />
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1'  type="text" placeholder='enter college' value={collegeName} onChange={(e)=> setCollegeName(e.target.value)}/>
+        <br />
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1'  type="text" placeholder='enter round1marks' value={round1Marks} onChange={(e)=> setRound1Marks(e.target.value)}/>
+        <br />
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1'  type="text" placeholder='enter round2marks' value={round2Marks} onChange={(e)=> setRound2Marks(e.target.value)}/>
+        <br />
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1'  type="text" placeholder='enter round3marks' value={round3Marks} onChange={(e)=> setRound3Marks(e.target.value)}/>
+        <br />
+        <input className='rounded-md width-1/3 height-1 border-2 px-3 py-2 m-1'  type="text" placeholder='enter technical round marks' value={technicalRoundMarks} onChange={(e)=> setTechnicalRoundMarks(e.target.value)}/>
 
-      <br />
-      <br />
-      <h1>RESULTS</h1>
-      {listitem}
+        <br />
+        <button onClick={handleSubmit}>Submit</button>
+        <br />
+
+        <br />
+        <br />
+        <div className='p-3 m-3'>
+        <h1 className='Heading'>RESULTS</h1>
+        </div>
+        <div className='flex flex-col items-center justify-center'>
+          {listitem}
+        </div>
+      </div>
     </>
 
 

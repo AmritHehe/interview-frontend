@@ -1,4 +1,7 @@
+/* @import "tailwindcss"; */
+@import "tailwindcss";
 :root {
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +68,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} 
+.Heading{ 
+  color: aqua;
 }
+
+.Heading{ 
+  color: rgb(255, 255, 255);
+  scale : 1
+}
+.Heading:hover { 
+  color: azure;
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.Heading::after{ 
+  scale: 1;
+  transition: all 0.3s;
+} 

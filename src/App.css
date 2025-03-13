@@ -1,3 +1,6 @@
+/* @import "tailwindcss"; */
+@import "tailwindcss";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +42,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.Heading{ 
+  color: rgb(255, 255, 255);
+  scale : 1
+}
+.Heading:hover { 
+  color: azure;
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.Heading::after{ 
+  scale: 1;
+  transition: all 0.3s;
 }
